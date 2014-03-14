@@ -10,8 +10,8 @@
   </description>
 
   <change-notes><![CDATA[
-      - 2.1.0 : Replaced MD5 mechanism by timestamps check to decide if generation should be performed (performance reason)
-      - 2.0.0 : Moved to IntelliJ 13 API
+      - 2.1.0 : Replaced MD5 mechanism by timestamps check to decide if generation should be performed (performance reason)<br /><br />
+      - 2.0.0 : Moved to IntelliJ 13 API<br /><br />
       - 1.0.3 : Fixed NullPointerException.<br /><br />
       - 1.0.2 : Added new feature that ensures directory "schemaorg_apache_xmlbeans/src" is always up to date after "Make" action.<br /><br />
       - 1.0.1 : Fixed a bug that prevented Run tool window to pop-up when Maven goals where launched.<br /><br />
