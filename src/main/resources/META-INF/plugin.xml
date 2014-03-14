@@ -1,0 +1,36 @@
+<idea-plugin version="2">
+  <id>${project.artifactId}</id>
+  <name>${project.name}</name>
+  <version>${project.version}</version>
+  <vendor email="${vendor.email}" url="${vendor.url}">${vendor.name}</vendor>
+
+  <description><![CDATA[
+      ${project.description}
+      ]]>
+  </description>
+
+  <change-notes><![CDATA[
+      - 2.1.0 : Replaced MD5 mechanism by timestamps check to decide if generation should be performed (performance reason)
+      - 2.0.0 : Moved to IntelliJ 13 API
+      - 1.0.3 : Fixed NullPointerException.<br /><br />
+      - 1.0.2 : Added new feature that ensures directory "schemaorg_apache_xmlbeans/src" is always up to date after "Make" action.<br /><br />
+      - 1.0.1 : Fixed a bug that prevented Run tool window to pop-up when Maven goals where launched.<br /><br />
+      ]]>
+  </change-notes>
+
+  <idea-version since-build="133.696"/>
+
+  <depends optional="true" config-file="maven-support.xml">org.jetbrains.idea.maven</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <facetType implementation="com.bsb.intellij.plugins.xmlbeans.facet.XmlBeansFacetType"/>
+    <programRunner implementation="com.bsb.intellij.plugins.xmlbeans.utils.silentrun.SilentJavaRunner" order="FIRST"/>
+
+    <projectService serviceInterface="com.bsb.intellij.plugins.xmlbeans.compiler.XmlBeansCleanCompileAndCopyTaskManager"
+                    serviceImplementation="com.bsb.intellij.plugins.xmlbeans.compiler.XmlBeansCleanCompileAndCopyTaskManager"/>
+
+    <projectService serviceInterface="com.bsb.intellij.plugins.xmlbeans.compiler.CopyGeneratedClassesToOutputDirectoryTaskManager"
+                    serviceImplementation="com.bsb.intellij.plugins.xmlbeans.compiler.CopyGeneratedClassesToOutputDirectoryTaskManager"/>
+  </extensions>
+
+</idea-plugin>
