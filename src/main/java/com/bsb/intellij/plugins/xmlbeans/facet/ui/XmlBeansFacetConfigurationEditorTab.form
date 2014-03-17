@@ -29,7 +29,7 @@
           </grid>
         </constraints>
         <properties/>
-        <border type="etched" title="Production directories"/>
+        <border type="etched" title="Production configuration"/>
         <children>
           <component id="de9c8" class="com.intellij.ui.components.JBLabel" binding="generatedSourcesLabel">
             <constraints>
@@ -95,7 +95,7 @@
             </constraints>
             <properties>
               <labelFor value="e5a9d"/>
-              <text value="XSD configs directory"/>
+              <text value="XSD configs directory :"/>
             </properties>
           </component>
           <component id="e5a9d" class="javax.swing.JTextField" binding="xsdConfig">
@@ -114,7 +114,7 @@
             </constraints>
             <properties>
               <labelFor value="1590d"/>
-              <text value="Java sources level"/>
+              <text value="Java sources level :"/>
             </properties>
           </component>
           <component id="1590d" class="javax.swing.JComboBox" binding="sourceLevel">
@@ -136,7 +136,7 @@
             </constraints>
             <properties>
               <labelFor value="d2683"/>
-              <text value="Max memory size"/>
+              <text value="Max memory size :"/>
             </properties>
           </component>
           <component id="d2683" class="javax.swing.JTextField" binding="maxMemorySize">
@@ -171,7 +171,7 @@
           </grid>
         </constraints>
         <properties/>
-        <border type="etched" title="Test directories"/>
+        <border type="etched" title="Test configuration"/>
         <children>
           <component id="a562" class="com.intellij.ui.components.JBLabel" binding="testSourcesLabel">
             <constraints>
@@ -237,7 +237,7 @@
             </constraints>
             <properties>
               <labelFor value="b9ff0"/>
-              <text value="XSD configs directory"/>
+              <text value="XSD configs directory :"/>
             </properties>
           </component>
           <component id="b9ff0" class="javax.swing.JTextField" binding="testXsdConfig">
@@ -256,7 +256,7 @@
             </constraints>
             <properties>
               <labelFor value="805f3"/>
-              <text value="Java sources level"/>
+              <text value="Java sources level :"/>
             </properties>
           </component>
           <component id="805f3" class="javax.swing.JComboBox" binding="testSourceLevel">
@@ -278,7 +278,7 @@
             </constraints>
             <properties>
               <labelFor value="d51a5"/>
-              <text value="Max memory size"/>
+              <text value="Max memory size :"/>
             </properties>
           </component>
           <component id="d51a5" class="javax.swing.JTextField" binding="testMaxMemorySize">
